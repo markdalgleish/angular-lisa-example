@@ -13,6 +13,6 @@ require.config({
 	}
 });
 
-require(['angular', 'controllers/controllers', 'directives/directives'], function (angular) {
-	angular.bootstrap(document, ['lisa-example']);
+require(['angular', 'controllers/controllers', 'directives/directives', 'services/services'], function (angular) {
+	angular.bootstrap(document, ['lisa', 'example-app']);
 });

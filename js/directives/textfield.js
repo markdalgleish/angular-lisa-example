@@ -1,7 +1,9 @@
-define(['app', 'lisa/textfield'], function(app, TextField) {
-	document.createElement('lisa-textfield');
+define(['angular', 'lisa/textfield'], function(angular, TextField) {
+	return angular.module('lisa', []).directive('lisaTextfield', function() {
+		
+		// IE fix
+		document.createElement('lisa-textfield');
 
-	return app.directive('lisaTextfield', function() {
 		return {
 			restrict: 'E',
 			require: 'ngModel',
