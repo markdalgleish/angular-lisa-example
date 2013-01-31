@@ -1,0 +1,31 @@
+<div ng-controller="MoviesController">
+	<h2>Movies</h2>
+
+	<p ng-show="isLoadingMovies">Loading Movies...</p>
+
+	<ul ng-cloak>
+		<li ng-repeat="movie in movies">
+			{{movie.name}} ( {{movie.year}} )
+		</li>
+	</ul>
+
+	<br />
+
+	<form novalidate ng-cloak ng-submit="addMovie()" name="newMovie">
+		<fieldset>
+			<legend>Add Movie</legend>
+
+			<label>Name:</label>
+			<lisa-textfield ng-model="newMovieName"></lisa-textfield>
+
+			<br />
+			
+			<label>Year:</label>
+			<lisa-textfield ng-model="newMovieYear"></lisa-textfield>
+
+			<br />
+			
+			<input type="submit" value="Add" />
+		</fieldset>
+	</form>
+</div>
