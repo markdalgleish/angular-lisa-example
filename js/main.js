@@ -5,7 +5,8 @@ require.config({
 		'angular': '../components/angular/angular',
 		'jquery': '../components/jquery/jquery.min',
 		'lisa': '../lisa/src',
-		'nohtml': 'lib/nohtml'
+		'nohtml': 'lib/nohtml',
+		'app': 'app/app'
 	},
 	shim: {
 		'angular':{
@@ -16,6 +17,7 @@ require.config({
 
 require([
 	'angular',
+	'app',
 	'controllers/controllers',
 	'directives/directives',
 	'services/services',
