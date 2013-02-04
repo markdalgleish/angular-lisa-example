@@ -1,6 +1,6 @@
 'use strict';
 
-define(['angular', 'text!./app.html'], function (angular, template) {
+define(['angular', 'text!views/app.html'], function (angular, template) {
     var app = angular.module('example-app', []);
 
     app.directive('exampleApp', function() {

@@ -6,6 +6,7 @@ require.config({
 		'jquery': '../components/jquery/jquery.min',
 		'lisa': '../lisa/src',
 		'nohtml': 'lib/nohtml',
+		'views': '../views',
 		'app': 'app/app'
 	},
 	shim: {
